@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finanza Bank</title>
+  <script>
+    function showLoginDialog() {
+      var loginForm = '<form action="#" method="post">' +
+                      '<label for="username">Username:</label>' +
+                      '<input type="text" id="username" name="username"><br><br>' +
+                      '<label for="password">Password:</label>' +
+                      '<input type="password" id="password" name="password"><br><br>' +
+                      '<input type="submit" value="Login">' +
+                      '</form>';
+      var dialogBox = document.createElement("div");
+      dialogBox.innerHTML = loginForm;
+      dialogBox.style.padding = "20px";
+      dialogBox.style.backgroundColor = "white";
+      dialogBox.style.border = "1px solid black";
+      dialogBox.style.position = "fixed";
+      dialogBox.style.top = "50%";
+      dialogBox.style.left = "50%";
+      dialogBox.style.transform = "translate(-50%, -50%)";
+  // Create a "Close" button
+  var closeButton = document.createElement("button");
+  closeButton.innerText = "Close";
+  closeButton.addEventListener("click", function() {
+    dialogBox.remove();
+  });
+  dialogBox.appendChild(closeButton);
+
+  document.body.appendChild(dialogBox);
+}
+
+function showAboutUs() {
+  // your existing code for the about us dialog
+}
+
+function showContactInfo() {
+  // your existing code for the contact us dialog
+}
+
+function openPage(url) {
+  var page = window.open(url, '_blank');
+  page.focus();
+}
+ </script>
+</head>
+<body background="finn2.jpg" height="100%" width="100%">
+  <table border="0" width="100%" height="700px">
+    <!----Row1---->
+    <tr>
+      <font color="white" face="Helvetica" size="5">
+        <th><font color="white" face="Helvetica" size="5"> FINANZA BANK</font></th>
+        <th></th>
+        <th></th>
+        <th> <a href="#" onclick="openPage('home.html')"><font color="white" face="Helvetica" size="2"> Home</font> </a> </th>
+        <th> <a href="#" onclick="openPage('aboutus.html')"><font color="white" face="Helvetica" size="2">About Us</font> </a></th>
+        <th> <a href="#" onclick="openPage('contactus.html')"><font color="white" face="Helvetica" size="2"> Contact Us </font></a></th>
+        <th> <a href="#" onclick="showLoginDialog()"><font color="white" face="Helvetica" size="2"> Login </font></a></th>
+      </font>
+    </tr>
+    <!----Row2---->
+    <tr>
+      <th colspan="6">
+        <P><img src="LOGO1.jpeg" height="200px" width="200px">
+          <h2><font color="white" face="Helvetica" size="5"> FINANZA BANK </font></h2>
+        </P>
+      </th>
+    </tr>
+    <!----Row3---->
+    <tr>
+      <th colspan="6">
+        <font size="5" color="orange" face="Aquire"> QR CODE </font>
+      </th>
+    </tr>
+    <!----Row4---->
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <!----Row5---->
+    <tr>
+      <th colspan="6">
+        <font color="white" face="Helvetica" size="2">Thanks for visiting the page </font>
+      </th>
+    </tr>
+    <!----Row6---->
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+</body>
+</html>
